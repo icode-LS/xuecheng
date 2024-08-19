@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: content-service
+  cloud:
+    nacos:
+      server-addr: 192.168.137.128:8848
+      config: #配置文件相关配置
+        namespace: dcf17d58-e420-41e8-952e-85660693e029
+        group: xuecheng-plus-project
+        file-extension: yaml
+        refresh-enabled: true
+  profiles:
+    active: dev   #环境名
+
+# 日志文件配置路径
+logging:
+  config: classpath:log4j2-dev.xml
+
