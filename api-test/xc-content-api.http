@@ -37,8 +37,13 @@ Content-Type: application/json
 ### 课程查询
 GET {{content_host}}/content/course/40
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ6aGFuZ3NhbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE3MjcyNDE4NjIsImF1dGhvcml0aWVzIjpbInAxIl0sImp0aSI6IjE4YjEwOTJmLWY3YjAtNDc2Ni1hZWVmLWQwY2NkNTQwNTJmNCIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.kYFJ-_rHZlNiRfXCeXHwg1Lg9rVhCP5-cxanLzIux9E
 
 ### 课程计划查询
 GET {{content_host}}/content/teachplan/117/tree-nodes
 Content-Type: application/json
+
+
+###
+POST {{auth_host}}/auth/oauth/token?client_id=XcWebApp&client_secret=XcWebApp&grant_type=password&password=111111&username=t1
 
